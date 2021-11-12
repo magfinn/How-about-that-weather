@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+header {
+    margin: 5%;
+    padding: 1%;
+    align-items: center;
+    height: 15vh;
+    background-color: rgb(203, 220, 240);
+    justify-content: center;
+}
+
+.container {
+    align-content: center;
+    padding: 2%
+}
+
+.row {
+    margin: 2%;
+    justify-content: space-around;
+}
+.col {
+    justify-content: space-between;
+}
+#forecast-container {
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-around;
+}

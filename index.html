@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="./assets/stylesheet.css"/>
+
+    <title>How About That Weather?</title>
+  </head>
+  <body>
+      <header>
+        <div class="container mx-auto ">
+            <h2>
+                How About That Weather? 
+                <span class="text-muted">Your 5-Day Forecast</span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div id="city-search" class="col-sm-3">
+                <div class="card">
+                    <h3 class="card-header">
+                        Search by City Name</h3>
+                    <form id="search-city-form" class = "card-body">
+                        <label class = "form-label" for="city">City</label>
+                        <input 
+                        name="city-input"
+                        id="city-input"
+                        type="text"
+                        placeholder="San Francisco"
+                        autofocus = "true"
+                        class="form-control form-control-md"
+                        ></input>
+                        <button id="search-btn" type="submit">Search</button>
+                        <button id="clear-btn" type="button">Clear</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="city-summary-container" class ="col-md-9">
+                <div class="card"id="todays-weather">
+                    <h3 class = "card-header" id="todays-date"></h3>
+                    <h2 class = "card title" id="city-name"></h2>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row">
+            <div class ="col-sm-3 card" id="past-searches">
+                <div class="card-header">Previous Searches:
+                    <ul class = "list-group list-group-flush" id="search-history">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 card" id="forecast-weather">
+                <h3 id="5day-forecast" class="card-header">Your 5 Day Forecast</h3>
+                
+            </div> 
+        </div>
+     </div>      
+                <!-- <h5 class = "card title" name="date"></h5>
+                <p class ="card-text">
+
+                        <h6 id="temp">Temp:</h6>
+                        <h6 id="wind">Wind:</h6>
+                        <h6 id="hum">Humidity:</h6>
+                </p>
+            </div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-2">
+                <h5 class = "card title" name="date"></h5>
+                <p class ="card-text">
+
+                        <h6 id="temp">Temp:</h6>
+                        <h6 id="wind">Wind:</h6>
+                        <h6 id="hum">Humidity:</h6>
+                </p>
+            </div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-3">
+                <h5 class = "card title" name="date"></h5>
+                <p class ="card-text">
+
+                        <h6 id="temp">Temp:</h6>
+                        <h6 id="wind">Wind:</h6>
+                        <h6 id="hum">Humidity</h6>
+                </p>
+            </div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-4">
+                <h5 class = "card title" name="date"></h5>
+                <p class ="card-text">
+
+                        <h6 id="temp">Temp:</h6>
+                        <h6 id="wind">Wind:</h6>
+                        <h6 id="hum">Humidity:</h6>
+                </p>
+            </div>
+            <div class = "card border-dark mb-3" style="max-width: 18rem;" id="weather-card-5">
+                <h5 class = "card title" name="date"></h5>
+                <p class ="card-text">
+
+                        <h6 id="temp">Temp:</h6>
+                        <h6 id="wind">Wind:</h6>
+                        <h6 id="hum">Humidity:</h6>
+                </p>
+            </div> -->
+
+          <!-- Jquery files -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+     <!-- Luxon CDN (for date&time) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js" integrity="sha512-frUCURIeB0OKMPgmDEwT3rC4NH2a4gn06N3Iw6T1z0WfrQZd7gNfJFbHrNsZP38PVXOp6nUiFtBqVvmCj+ARhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+    <!-- Local js -->
+    <script src="./assets/script.js"></script>
+    <!-- <script src="./assets/js/homepage.js"></script> -->
+  </body>
+  </html>
