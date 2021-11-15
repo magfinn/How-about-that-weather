@@ -17,17 +17,17 @@
   <body>
       <header>
         <div class="container mx-auto ">
-            <h2>
+            <h1>
                 How About That Weather? 
-                <span class="text-muted">Your 5-Day Forecast</span>
+                <span class="text-muted">Your 5-Day Forecast</span></h1>
         </div>
     </header>
     <div class="container">
         <div class="row">
             <div id="city-search" class="col-sm-3">
                 <div class="card">
-                    <h3 class="card-header">
-                        Search by City Name</h3>
+                    <h4 class="card-header">
+                        Search by City Name</h4>
                     <form id="search-city-form" class = "card-body">
                         <label class = "form-label" for="city">City</label>
                         <input 
@@ -38,84 +38,34 @@
                         autofocus = "true"
                         class="form-control form-control-md"
                         ></input>
-                        <button id="search-btn" type="submit">Search</button>
+                        <button id="search-btn" type="submit" class = "btn btn-outline-dark">Search</button>
                     </form>
                 </div>
             </div>
 
             <div id="city-summary-container" class ="col-md-9">
-                <h3 class = "card-header" id="todays-date"></h3>
-                <div class="card" id="todays-weather">
-                    <h2 class = "card title" id="city-name"></h2>
-                    
-                        <!-- <li id="curTemp">Current Temperature:<span id="temp"></span></li>
-                        <li id="curHum">Humidity:</li>
-                        <li id="curVis">Visibility:</li>
-                        <li id="curWind">Wind Speed:</li>
-                        <li id="curUV">UV-Index:</li> -->
-                    </ul>
-                </div>
+                <h3 class = "card-header">Today's Weather <span id="todays-weather"></span></h3>
+                    <h2 class = "card-title" id="city-name"></h2>
             </div>
         </div>
   
         <div class="row">
-            <div class ="col-sm-3 card" id="past-searches">
-                <div class="card-header">Previous Searches:
-                    <ul class = "list-group list-group-flush" id="search-history">
-
-                    </ul>
+            <div class ="col-md-3" id="past-searches">
+                <div class="card">
+                    <h4 class="card-header">Previous Searches:</h4>
+                        <p class = "list-group list-group-flush" id="search-history"></p>
                 </div>
             </div>
-            <div class="col-md-9 card" id="forecast-weather">
+            
+            <div class="col-lg-9">
                 <h3 id="5day-forecast" class="card-header">Your 5 Day Forecast</h3>
-                
+                <div class="row" id="forecast-row">
+                <div id = forecast-weather></div>
+
             </div> 
         </div>
      </div>      
-                <!-- <h5 class = "card title" name="date"></h5>
-                <p class ="card-text">
 
-                        <h6 id="temp">Temp:</h6>
-                        <h6 id="wind">Wind:</h6>
-                        <h6 id="hum">Humidity:</h6>
-                </p>
-            </div>
-            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-2">
-                <h5 class = "card title" name="date"></h5>
-                <p class ="card-text">
-
-                        <h6 id="temp">Temp:</h6>
-                        <h6 id="wind">Wind:</h6>
-                        <h6 id="hum">Humidity:</h6>
-                </p>
-            </div>
-            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-3">
-                <h5 class = "card title" name="date"></h5>
-                <p class ="card-text">
-
-                        <h6 id="temp">Temp:</h6>
-                        <h6 id="wind">Wind:</h6>
-                        <h6 id="hum">Humidity</h6>
-                </p>
-            </div>
-            <div class="card border-dark mb-3" style="max-width: 18rem;" id="weather-card-4">
-                <h5 class = "card title" name="date"></h5>
-                <p class ="card-text">
-
-                        <h6 id="temp">Temp:</h6>
-                        <h6 id="wind">Wind:</h6>
-                        <h6 id="hum">Humidity:</h6>
-                </p>
-            </div>
-            <div class = "card border-dark mb-3" style="max-width: 18rem;" id="weather-card-5">
-                <h5 class = "card title" name="date"></h5>
-                <p class ="card-text">
-
-                        <h6 id="temp">Temp:</h6>
-                        <h6 id="wind">Wind:</h6>
-                        <h6 id="hum">Humidity:</h6>
-                </p>
-            </div> -->
 
           <!-- Jquery files -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

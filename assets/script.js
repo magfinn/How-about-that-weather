@@ -127,7 +127,7 @@ displayForecast = function(forecastData) {
     
     
     //day1
-    forecastDiv.append("<div id='cardDiv' class='card col-12 col-lg-2'>" + 
+    forecastDiv.append("<div id='cardDiv' class='card'>" + 
     "<h4 class='mt-1'>" +  day1 + "</h4>" +
     "<img class = 'forecastIcon' src='https://openweathermap.org/img/wn/" + forecastData.list[0].weather[0].icon + "@2x.png'>" + 
     "<p class='forecastP'> Temp: " + forecastData.list[0].main.temp + " °F</p>" +
@@ -136,7 +136,7 @@ displayForecast = function(forecastData) {
     "</div>");   
 
     //day2
-    forecastDiv.append("<div id='cardDiv' class='card col-12 col-lg-2'>" + 
+    forecastDiv.append("<div id='cardDiv' class='card'>" + 
     "<h4 class='mt-1'>" +  day2 + "</h4>" +
     "<img class = 'forecastIcon' src='https://openweathermap.org/img/wn/" + forecastData.list[1].weather[0].icon + "@2x.png'>" + 
     "<p class='forecastP'> Temp: " + forecastData.list[1].main.temp + " °F</p>" +
@@ -145,7 +145,7 @@ displayForecast = function(forecastData) {
     "</div>");   
 
     //day3
-    forecastDiv.append("<div id='cardDiv' class='card col-12 col-lg-2'>" + 
+    forecastDiv.append("<div id='cardDiv' class='card'>" + 
     "<h4 class='mt-1'>" +  day3 + "</h4>" +
     "<img class = 'forecastIcon' src='https://openweathermap.org/img/wn/" + forecastData.list[2].weather[0].icon + "@2x.png'>" + 
     "<p class='forecastP'> Temp: " + forecastData.list[2].main.temp + " °F</p>" +
@@ -154,7 +154,7 @@ displayForecast = function(forecastData) {
     "</div>");   
 
     //day4
-    forecastDiv.append("<div id='cardDiv' class='card col-12 col-lg-2'>" + 
+    forecastDiv.append("<div id='cardDiv' class='card'>" + 
     "<h4 class='mt-1'>" +  day4 + "</h4>" +
     "<img class = 'forecastIcon' src='https://openweathermap.org/img/wn/" + forecastData.list[3].weather[0].icon + "@2x.png'>" + 
     "<p class='forecastP'> Temp: " + forecastData.list[3].main.temp + " °F</p>" +
@@ -163,7 +163,7 @@ displayForecast = function(forecastData) {
     "</div>"); 
 
     //day5
-    forecastDiv.append("<div id='cardDiv' class='card col-12 col-lg-2'>" + 
+    forecastDiv.append("<div id='cardDiv' class='card'>" + 
     "<h4 class='mt-1'>" +  day5 + "</h4>" +
     "<img class = 'forecastIcon' src='https://openweathermap.org/img/wn/" + forecastData.list[4].weather[0].icon + "@2x.png'>" + 
     "<p class='forecastP'> Temp: " + forecastData.list[4].main.temp + " °F</p>" +
