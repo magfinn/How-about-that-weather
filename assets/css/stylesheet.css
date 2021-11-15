@@ -8,20 +8,19 @@
 
 header {
     margin: 2%;
-    padding: 3%;
     align-items: center;
     height: 15vh;
-    background-color: rgb(203, 220, 240);
+    background-color:rgb(222, 227, 231);
     justify-content: center;
 }
 
-.h1 {
-    display: flex;
-    font-size: x-large;
+h1 {
+    margin-top: 2%;
+    font-weight: bolder;
     align-content: center;
     font-stretch: ultra-expanded;
     text-align: center;
-    color: whitesmoke;
+    color:darkslategray;
     justify-self: center;
 
 }
@@ -34,6 +33,10 @@ header {
     margin-bottom: 5%;
 }
 
+.card-header {
+    font-weight: bold;
+    color: darkslategray
+}
 
 #forecast-weather {
    display: flexbox;

@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+<!-- Bootstrap for styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
 
-    <link rel="stylesheet" href="./assets/stylesheet.css"/>
+<!-- local stylesheet -->
+    <link rel="stylesheet" href="./assets/css/stylesheet.css"/>
 
-    <title>How About That Weather?</title>
+    <title>How about that Weather!</title>
   </head>
+
   <body>
       <header>
         <div class="container mx-auto ">
-            <h1>
-                How About That Weather? 
-                <span class="text-muted">Your 5-Day Forecast</span></h1>
+            <h1> How about that weather! 
+                <span class="text-muted">Your 5-day weather forecast</span></h1>
         </div>
     </header>
+<!-- Main Container -->
     <div class="container">
+        <!-- Row #1 -->
         <div class="row">
             <div id="city-search" class="col-sm-3">
                 <div class="card">
@@ -48,7 +51,7 @@
                     <h2 class = "card-title" id="city-name"></h2>
             </div>
         </div>
-  
+        <!-- Row #2 -->
         <div class="row">
             <div class ="col-md-3" id="past-searches">
                 <div class="card">
@@ -64,21 +67,21 @@
 
             </div> 
         </div>
-     </div>      
+     </div>   
+    </div>   
 
-
-          <!-- Jquery files -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Jquery files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
      <!-- Luxon CDN (for date&time) -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js" integrity="sha512-frUCURIeB0OKMPgmDEwT3rC4NH2a4gn06N3Iw6T1z0WfrQZd7gNfJFbHrNsZP38PVXOp6nUiFtBqVvmCj+ARhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 
     <!-- Local js -->
-    <script src="./assets/script.js"></script>
-    <!-- <script src="./assets/js/homepage.js"></script> -->
+    <script src="./assets/js/script.js"></script>
+
   </body>
   </html>

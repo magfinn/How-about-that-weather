@@ -26,24 +26,20 @@ function timeTracker() {
 
 var displaySearches = function(){
     searchResultsList.empty();
-
     // for loop to persit the search data into the search history
     for (var i=0; i<localStorage.length; i++) {
         var getCity = JSON.parse(localStorage.getItem(i));
         searchResultsList.append("<p id='clickItem' class='search-item mt-2 col-12'>" + getCity + "</p>");  
-    }
+    };
 };
 
 $("#search-history").on("click", "p", (function() {
     var searchedCity = $(this).text().trim();
-
     //pass the city name to getWeatherData
     getWeather(searchedCity);
 }));
 
-
 var getWeather = function (city) {
-
     var currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIkey + "&units=imperial";
     console.log(currentWeatherUrl);
     var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=imperial";
@@ -51,7 +47,7 @@ var getWeather = function (city) {
     
     todaysWeather.empty();
     forecastDiv.empty();
-
+    // fetch current weather data
     fetch(currentWeatherUrl)
     .then(response => {
         if(response.ok) {
@@ -67,6 +63,7 @@ var getWeather = function (city) {
     .catch(function(error){
         alert('error alert');
     });
+    // fetch 5-day forecast data
     fetch(forecastUrl)
     .then(response=> {
         if(response.ok) {
@@ -85,6 +82,7 @@ var getWeather = function (city) {
     });
 };
 
+// display current weather data
 function displayWeather (data) {
     localStorage.setItem(searchCount, JSON.stringify(data.name));
     searchCount = searchCount + 1;
@@ -113,6 +111,7 @@ function displayWeather (data) {
     });
 };
 
+// display 5-day forecast data
 displayForecast = function(forecastData) {
     console.log(forecastData);
 
@@ -124,7 +123,6 @@ displayForecast = function(forecastData) {
 
     var forecastTitle = document.createElement('h3');
     forecastTitle.append("<h3 class = 'mb-1'>5-Day Forecast:</h3>"); 
-    
     
     //day1
     forecastDiv.append("<div id='cardDiv' class='card'>" + 
@@ -175,10 +173,8 @@ displayForecast = function(forecastData) {
 //on click search button
 searchBtn.on('click', function(event) {
     event.preventDefault();
-
     //get city name from input field
     var cityName = cityInput.val().trim();
-
     if(cityName) {
         getWeather(cityName);
     //TODO: Set city to local storage
@@ -188,6 +184,6 @@ searchBtn.on('click', function(event) {
 });
 
 
-    timeTracker();
-    displaySearches();
+timeTracker();
+displaySearches();
 
