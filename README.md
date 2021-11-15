@@ -20,6 +20,6 @@ Preview:
 
 Links:
 GitHub Repository: https://github.com/magfinn/How-about-that-weather
-Deployed URL: https://magfinn.github.io/How-about-that-weather/
+<br>Deployed URL: https://magfinn.github.io/How-about-that-weather/
 
 
